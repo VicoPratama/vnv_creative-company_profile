@@ -1,4 +1,14 @@
 import React from 'react';
+import heroCollage from './assets/hero_collage.png';
+import logoBosles from './assets/logo_bosles.jpg';
+import serviceVideo from './assets/service_video.png';
+import serviceWeb from './assets/service_web.png';
+import serviceGraphic from './assets/service_graphic.png';
+import projectHelpdesk from './assets/project_helpdesk.png';
+import projectRecruitment from './assets/project_recruitment.png';
+import projectBimbel from './assets/project_bimbel.png';
+import projectPortfolio from './assets/project_portfolio.png';
+import projectTransit from './assets/project_transit.png';
 
 function App() {
   const [openFaq, setOpenFaq] = React.useState(null);
@@ -78,7 +88,7 @@ function App() {
 
             <div style={{ position: 'relative', zIndex: 1 }}>
               <div className="float-slow" style={{ position: 'relative', borderRadius: '40px', overflow: 'hidden', boxShadow: '0 50px 100px rgba(3, 5, 198, 0.15)', transform: 'perspective(1000px) rotateY(-5deg) rotateX(5deg)' }}>
-                <img src="/src/assets/hero_collage.png" alt="Creative Excellence" style={{ width: '100%', height: '500px', objectFit: 'cover', display: 'block' }} />
+                <img src={heroCollage} alt="Creative Excellence" style={{ width: '100%', height: '500px', objectFit: 'cover', display: 'block' }} />
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(45deg, rgba(3, 5, 198, 0.1), transparent)' }}></div>
               </div>
 
@@ -198,7 +208,7 @@ function App() {
              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <div className="glass-dark" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', padding: '2.5rem 5rem', borderRadius: '32px', border: '1px solid rgba(3, 5, 198, 0.1)', boxShadow: 'var(--shadow-sm)' }}>
                    <div style={{ width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '3px solid #fff', boxShadow: 'var(--shadow-sm)', background: '#fff' }}>
-                     <img src="/src/assets/logo_bosles.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Bosles Bimbel" />
+                     <img src={logoBosles} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Bosles Bimbel" />
                    </div>
                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                      <span style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--text-main)', letterSpacing: '0.5px' }}>BOSLES BIMBEL</span>
@@ -219,9 +229,9 @@ function App() {
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2.5rem' }}>
               {[
-                { title: 'Video Editing', icon: '🎬', desc: 'High-end cinematic storytelling, color grading, and motion graphics that capture your audience.', img: '/src/assets/service_video.png', link: '#contact' },
-                { title: 'Web Development', icon: '💻', desc: 'Bespoke, high-performance websites built with the latest technologies and a focus on conversion.', img: '/src/assets/service_web.png', link: '#portfolio' },
-                { title: 'Graphic Design', icon: '🎨', desc: 'Visual identities and branding that make your business unforgettable in a crowded market.', img: '/src/assets/service_graphic.png', link: '#contact' }
+                { title: 'Video Editing', icon: '🎬', desc: 'High-end cinematic storytelling, color grading, and motion graphics that capture your audience.', img: serviceVideo, link: '#contact' },
+                { title: 'Web Development', icon: '💻', desc: 'Bespoke, high-performance websites built with the latest technologies and a focus on conversion.', img: serviceWeb, link: '#portfolio' },
+                { title: 'Graphic Design', icon: '🎨', desc: 'Visual identities and branding that make your business unforgettable in a crowded market.', img: serviceGraphic, link: '#contact' }
               ].map((s, idx) => (
                 <div key={idx} className="service-card" style={{ background: '#fff', borderRadius: '32px', overflow: 'hidden', padding: '1rem', border: '1px solid rgba(0,0,0,0.05)', boxShadow: 'var(--shadow-md)', transition: 'var(--transition)' }}>
                   <div style={{ height: '240px', overflow: 'hidden', borderRadius: '24px', position: 'relative' }}>
@@ -260,7 +270,7 @@ function App() {
                   desc: 'Streamlined corporate operations portal for HAKA Auto Group featuring automated ticket routing, real-time tracking, and integrated GA meeting room bookings.',
                   tech: 'React • TypeScript • Tailwind CSS • Supabase • TanStack Query',
                   github: 'https://github.com/ict-bumiauto/adas-helpdesk-hakaauto',
-                  img: '/src/assets/project_helpdesk.png'
+                  img: projectHelpdesk
                 },
                 {
                   title: 'BYD Haka Careers Hub',
@@ -268,7 +278,7 @@ function App() {
                   desc: 'A comprehensive candidate recruitment portal for HR to post listings, track applicants, score profiles, and schedule interviews with elegant dashboard insights.',
                   tech: 'React • TypeScript • Supabase • Tailwind CSS • TanStack Query • Recharts',
                   github: 'https://github.com/ict-bumiauto/hakaauto-rekrutmen',
-                  img: '/src/assets/project_recruitment.png'
+                  img: projectRecruitment
                 },
                 {
                   title: 'Bosles Bimbel Portal',
@@ -276,7 +286,7 @@ function App() {
                   desc: 'An interactive study and tutoring platform enabling seamless tutor-student scheduling, virtual classes, progress analytics, and curriculum resources.',
                   tech: 'React • Vite • Tailwind CSS • Supabase Auth & Storage',
                   github: 'https://github.com/VicoPratama/bosles-bimbel',
-                  img: '/src/assets/project_bimbel.png'
+                  img: projectBimbel
                 },
                 {
                   title: 'Vico Pratama Portfolio',
@@ -284,7 +294,7 @@ function App() {
                   desc: 'A bespoke personal portfolio website displaying complex engineering projects with glowing interactive UI components, dark mode, and seamless layouts.',
                   tech: 'React • Vite • Tailwind CSS • Vercel Hosting',
                   github: 'https://github.com/VicoPratama/portfolio-vicopf',
-                  img: '/src/assets/project_portfolio.png'
+                  img: projectPortfolio
                 },
                 {
                   title: 'Tebet to BSD Commuter',
@@ -292,7 +302,7 @@ function App() {
                   desc: 'An intelligent transit helper mapping routes, estimating travel fares, and tracking real-time KRL and shuttle schedules for Tebet-BSD commuters.',
                   tech: 'React • Tailwind CSS • Vite • Local Transit API',
                   github: 'https://github.com/VicoPratama/tebet-to-bsd',
-                  img: '/src/assets/project_transit.png'
+                  img: projectTransit
                 }
               ].map((p, idx) => (
                 <div key={idx} className="portfolio-card">
