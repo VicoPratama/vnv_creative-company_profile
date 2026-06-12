@@ -521,10 +521,10 @@ function App() {
                     Malang, East Java, Indonesia
                   </div>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                {/* <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                   <span style={{ color: '#fff', fontSize: '1.2rem' }}>📞</span>
                   <a href="tel:+6281907211950" style={{ fontSize: '0.95rem', opacity: 0.9 }}>+62 819 0721 1950</a>
-                </div>
+                </div> */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                   <span style={{ color: '#fff', fontSize: '1.2rem' }}>✉️</span>
                   <a href="mailto:vnvcreator@gmail.com" style={{ fontSize: '0.95rem', opacity: 0.9 }}>vnvcreator@gmail.com</a>
