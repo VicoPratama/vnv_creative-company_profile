@@ -518,7 +518,7 @@ function App() {
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
                   <span style={{ color: '#fff', fontSize: '1.2rem', marginTop: '2px' }}>📍</span>
                   <div style={{ lineHeight: '1.6', fontSize: '0.95rem' }}>
-                    South Jakarta, Indonesia
+                    Malang, East Java, Indonesia
                   </div>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
