@@ -59,129 +59,29 @@ function App() {
         <div className="bg-blob blob-1"></div>
         <div className="bg-blob blob-2"></div>
 
-        <section className="hero" style={{ padding: '100px 0 160px', position: 'relative' }}>
-          <div className="container" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 0.8fr)', alignItems: 'center', gap: '5rem' }}>
-            <div style={{ zIndex: 2 }}>
-              <div className="float-fast" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.8rem', padding: '0.6rem 1.2rem', background: 'var(--secondary-glow)', color: 'var(--secondary)', borderRadius: '100px', fontWeight: 700, fontSize: '0.85rem', marginBottom: '2rem', border: '1px solid rgba(3, 5, 198, 0.1)' }}>
-                <span style={{ fontSize: '1.2rem' }}>✨</span> CREATIVE EXCELLENCE & TECH
-              </div>
-              <h1 style={{ fontSize: 'clamp(3.5rem, 8vw, 5.5rem)', fontWeight: 900, marginBottom: '2rem', lineHeight: '0.95', letterSpacing: '-0.04em' }}>
-                Transforming <span style={{ color: 'var(--secondary)', position: 'relative' }}>
-                  Ideas
-                  <svg style={{ position: 'absolute', bottom: '-10px', left: 0, width: '100%', height: '12px' }} viewBox="0 0 100 12" preserveAspectRatio="none">
-                    <path d="M0 10 Q 50 0 100 10" stroke="var(--secondary)" strokeWidth="3" fill="none" opacity="0.3" />
-                  </svg>
-                </span> into Reality.
-              </h1>
-              <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', marginBottom: '3.5rem', maxWidth: '540px', lineHeight: '1.6' }}>
-                We blend cinematic storytelling with cutting-edge technology to build digital experiences that move people and markets.
-              </p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-                <a href="#portfolio" className="btn-primary">
-                  Explore Work <span style={{ fontSize: '1.2rem' }}>→</span>
-                </a>
-                <a href="#contact" style={{ fontWeight: 700, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: '0.5rem', transition: 'var(--transition)' }}>
-                   Book a Consultation
-                </a>
-              </div>
+        <section className="hero" style={{ padding: '160px 0 100px', position: 'relative', textAlign: 'center' }}>
+          <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '1000px', margin: '0 auto' }}>
+            <div className="float-fast" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.8rem', padding: '0.6rem 1.2rem', background: 'rgba(255,255,255,0.05)', color: 'var(--text-muted)', borderRadius: '100px', fontWeight: 700, fontSize: '0.75rem', marginBottom: '2rem', border: '1px solid rgba(255,255,255,0.1)', letterSpacing: '1px', textTransform: 'uppercase' }}>
+              CREATIVE STUDIO
             </div>
-
-            <div style={{ position: 'relative', zIndex: 1 }}>
-              <div className="float-slow" style={{ position: 'relative', borderRadius: '40px', overflow: 'hidden', boxShadow: '0 50px 100px rgba(3, 5, 198, 0.15)', transform: 'perspective(1000px) rotateY(-5deg) rotateX(5deg)' }}>
-                <img src={heroCollage} alt="Creative Excellence" style={{ width: '100%', height: '500px', objectFit: 'cover', display: 'block' }} />
-                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(45deg, rgba(3, 5, 198, 0.1), transparent)' }}></div>
-              </div>
-
-              {/* Floating Elements */}
-              <div className="glass float" style={{ position: 'absolute', top: '-30px', right: '-40px', padding: '1.5rem', borderRadius: '24px', minWidth: '180px', zIndex: 10 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
-                  <div style={{ width: '40px', height: '40px', background: 'var(--secondary)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '1.2rem' }}>📊</div>
-                  <div>
-                    <div style={{ fontWeight: 800, fontSize: '1.4rem', lineHeight: 1, color: 'var(--secondary)' }}>50+</div>
-                    <div style={{ fontSize: '0.7rem', fontWeight: 600, color: 'var(--text-muted)' }}>PROJECTS</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="glass float-fast" style={{ position: 'absolute', bottom: '40px', left: '-50px', padding: '1.2rem', borderRadius: '20px', display: 'flex', alignItems: 'center', gap: '1rem', zIndex: 10 }}>
-                <div style={{ width: '12px', height: '12px', background: '#10b981', borderRadius: '50%', boxShadow: '0 0 15px #10b981' }}></div>
-                <div style={{ fontWeight: 700, fontSize: '0.9rem' }}>Open for Collaboration</div>
-              </div>
-
-              <div className="glass float-slow" style={{ position: 'absolute', top: '40%', right: '-60px', padding: '1rem', borderRadius: '18px', zIndex: 5 }}>
-                <div style={{ display: 'flex', gap: '10px' }}>
-                  {[1, 2, 3].map(i => (
-                    <div key={i} style={{ width: '32px', height: '32px', borderRadius: '50%', background: '#ddd', border: '2px solid #fff' }}></div>
-                  ))}
-                  <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'var(--secondary)', border: '2px solid #fff', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '0.7rem', fontWeight: 800 }}>+12</div>
-                </div>
-              </div>
+            <h1 style={{ fontSize: 'clamp(4rem, 8vw, 6.5rem)', fontWeight: 900, marginBottom: '2rem', lineHeight: '1.1', letterSpacing: '-0.04em', textTransform: 'uppercase' }}>
+              TRANSFORM. BUILD. <span style={{ color: 'var(--secondary)' }}>REALITY.</span>
+            </h1>
+            <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', marginBottom: '3.5rem', maxWidth: '640px', lineHeight: '1.6' }}>
+              We blend cinematic storytelling with cutting-edge technology to build digital experiences that move people and markets.
+            </p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', justifyContent: 'center' }}>
+              <a href="#portfolio" className="btn-primary" style={{ padding: '1.2rem 3rem', color: '#fff' }}>
+                Start Your Project
+              </a>
+              <a href="#contact" className="btn-primary" style={{ background: 'transparent', border: '1px solid rgba(255, 255, 255, 1)', padding: '1.2rem 3rem', boxShadow: 'none', color: '#fff' }}>
+                 View Showcase
+              </a>
             </div>
           </div>
         </section>
 
-        <section id="bento" style={{ padding: '80px 0', background: '#fafafa', borderTop: '1px solid rgba(0,0,0,0.02)', borderBottom: '1px solid rgba(0,0,0,0.02)' }}>
-          <div className="container">
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'stretch' }}>
-              
-              {/* Bento Card 1: Operational Radar Availability */}
-              <div className="bento-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem' }}>
-                  <div className="radar-dot">
-                    <div className="radar-ripple"></div>
-                  </div>
-                  <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#10b981', letterSpacing: '1px', textTransform: 'uppercase' }}>Available for Projects</span>
-                </div>
-                <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1rem', color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
-                  Operational Radar
-                </h3>
-                <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                  Based in Mampang, Jakarta Selatan, active on both local development environments and Supabase cloud integrations. Ready to deploy within 24 hours.
-                </p>
-              </div>
-
-              {/* Bento Card 2: Coding Pulse Equalizer */}
-              <div className="bento-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-                  <span style={{ fontSize: '0.82rem', fontWeight: 800, color: 'var(--secondary)', letterSpacing: '1px', textTransform: 'uppercase' }}>Coding Focus</span>
-                  <div className="equalizer-container">
-                    <div className="equalizer-bar"></div>
-                    <div className="equalizer-bar"></div>
-                    <div className="equalizer-bar"></div>
-                    <div className="equalizer-bar"></div>
-                  </div>
-                </div>
-                <div>
-                  <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1rem', color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
-                    Active Development Pulse
-                  </h3>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.6' }}>
-                    Constant development rhythm pushing live updates to production. We specialize in zero-downtime hot-reloads and enterprise ticketing systems.
-                  </p>
-                </div>
-              </div>
-
-              {/* Bento Card 3: Interactive Tech Stack Badges */}
-              <div className="bento-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <span style={{ fontSize: '0.82rem', fontWeight: 800, color: 'var(--secondary)', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Tech Arsenal</span>
-                <h3 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '1.2rem', color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
-                  Our Tech Stack
-                </h3>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                  {['React', 'Vite', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Figma', 'VS Code'].map((tech, i) => (
-                    <div key={i} className="portfolio-tech-badge" style={{ margin: 0, padding: '0.4rem 0.8rem', borderRadius: '8px', fontSize: '0.72rem', background: 'var(--secondary-glow)', color: 'var(--secondary)' }}>
-                      {tech}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-
-        <section id="stats" style={{ background: '#0305C6', color: '#fff', padding: '4rem 0' }}>
+        <section id="stats" style={{ background: '#0a0a0a', color: '#fff', padding: '4rem 0' }}>
           <div className="container" style={{ display: 'flex', justifyContent: 'space-around', textAlign: 'center', flexWrap: 'wrap', gap: '2rem' }}>
             <div>
               <div style={{ fontSize: '3rem', fontWeight: 900 }}>15+</div>
@@ -202,123 +102,172 @@ function App() {
           </div>
         </section>
 
-        <section id="partners" style={{ padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
+        <section id="partners" style={{ padding: '80px 0', background: '#0a0a0a', position: 'relative', overflow: 'hidden' }}>
           <div className="container">
-             <div style={{ textAlign: 'center', opacity: 0.5, textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '4px', marginBottom: '2.5rem', fontWeight: 800 }}>Our Trusted Client</div>
+             <div style={{ textAlign: 'center', opacity: 0.5, textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '4px', marginBottom: '2.5rem', fontWeight: 800 }}>SUCCESS STORY</div>
              <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <div className="glass-dark" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', padding: '2.5rem 5rem', borderRadius: '32px', border: '1px solid rgba(3, 5, 198, 0.1)', boxShadow: 'var(--shadow-sm)' }}>
-                   <div style={{ width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '3px solid #fff', boxShadow: 'var(--shadow-sm)', background: '#fff' }}>
-                     <img src={logoBosles} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Bosles Bimbel" />
+                <a href="https://bosles-bimbel.vercel.app/" target="_blank" rel="noopener noreferrer" className="glass-dark bento-card" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '3rem', padding: '3.5rem', borderRadius: '32px', border: '1px solid rgba(255,255,255, 0.1)', boxShadow: 'var(--shadow-sm)', maxWidth: '900px', textDecoration: 'none', color: 'inherit', transition: 'all 0.3s ease' }}>
+                   
+                   <div style={{ flex: 1 }}>
+                     <div style={{ color: 'var(--secondary)', fontSize: '2rem', marginBottom: '1rem', lineHeight: 1 }}>"</div>
+                     <p style={{ fontSize: '1.2rem', color: 'var(--text-main)', lineHeight: '1.6', marginBottom: '1.5rem', fontStyle: 'italic' }}>
+                       "VnV Creative merombak total cara kami beroperasi. Mereka tidak hanya membuat website biasa, tapi membangun sebuah <strong>Sistem Dashboard Terintegrasi</strong> yang sangat kompleks namun mudah digunakan."
+                     </p>
+                     <ul style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.6', paddingLeft: '1.2rem', marginBottom: '1.5rem' }}>
+                       <li style={{ marginBottom: '0.5rem' }}>Portal registrasi dan pembayaran untuk Siswa & Orang Tua.</li>
+                       <li style={{ marginBottom: '0.5rem' }}>Dashboard Admin untuk manajemen seluruh siswa, tentor, dan arus kas.</li>
+                       <li>Portal Tentor khusus untuk melihat jadwal mengajar, siswa yang dihandle, dan tracking gaji.</li>
+                     </ul>
+                     <div style={{ color: 'var(--secondary)', fontWeight: 800, fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                       VIEW LIVE PLATFORM <span style={{ fontSize: '1.2rem' }}>→</span>
+                     </div>
                    </div>
-                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-                     <span style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--text-main)', letterSpacing: '0.5px' }}>BOSLES BIMBEL</span>
-                     <span style={{ fontSize: '0.75rem', color: 'var(--secondary)', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', marginTop: '0.2rem' }}>Pendidikan & Les Privat</span>
+
+                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingLeft: '2rem', borderLeft: '1px solid rgba(255,255,255,0.1)' }}>
+                     <div style={{ width: '100px', height: '100px', borderRadius: '50%', overflow: 'hidden', border: '3px solid #fff', boxShadow: 'var(--shadow-sm)', background: '#fff', marginBottom: '1rem' }}>
+                       <img src={logoBosles} style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Bosles Bimbel" />
+                     </div>
+                     <div style={{ textAlign: 'center' }}>
+                       <span style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--text-main)', letterSpacing: '0.5px', display: 'block' }}>BOSLES BIMBEL</span>
+                       <span style={{ fontSize: '0.75rem', color: 'var(--secondary)', fontWeight: 700, letterSpacing: '1px', textTransform: 'uppercase', marginTop: '0.2rem', display: 'block' }}>Pendidikan & Les Privat</span>
+                     </div>
                    </div>
-                </div>
+
+                </a>
              </div>
           </div>
         </section>
 
-        <section id="services" style={{ background: '#fcfcfc', padding: '120px 0', position: 'relative' }}>
+        <section id="services" style={{ background: '#0a0a0a', padding: '120px 0', position: 'relative' }}>
           <div className="container">
-            <div style={{ textAlign: 'center', marginBottom: '6rem' }}>
-              <div style={{ color: 'var(--secondary)', fontWeight: 800, fontSize: '0.9rem', letterSpacing: '2px', marginBottom: '1rem' }}>WHAT WE DO</div>
-              <h2 style={{ fontSize: '3.5rem', fontWeight: 900, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>Core Capabilities</h2>
-              <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto', fontSize: '1.1rem' }}>Specialized solutions merging art and engineering for modern brands.</p>
+            <div style={{ marginBottom: '4rem' }}>
+              <h2 style={{ fontSize: '3rem', fontWeight: 900, marginBottom: '1rem', letterSpacing: '-0.02em', borderBottom: '2px solid rgba(255,255,255,0.1)', display: 'inline-block', paddingBottom: '0.5rem' }}>Core Expertise</h2>
             </div>
             
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2.5rem' }}>
-              {[
-                { title: 'Video Editing', icon: '🎬', desc: 'High-end cinematic storytelling, color grading, and motion graphics that capture your audience.', img: serviceVideo, link: '#contact' },
-                { title: 'Web Development', icon: '💻', desc: 'Bespoke, high-performance websites built with the latest technologies and a focus on conversion.', img: serviceWeb, link: '#portfolio' },
-                { title: 'Graphic Design', icon: '🎨', desc: 'Visual identities and branding that make your business unforgettable in a crowded market.', img: serviceGraphic, link: '#contact' }
-              ].map((s, idx) => (
-                <div key={idx} className="service-card" style={{ background: '#fff', borderRadius: '32px', overflow: 'hidden', padding: '1rem', border: '1px solid rgba(0,0,0,0.05)', boxShadow: 'var(--shadow-md)', transition: 'var(--transition)' }}>
-                  <div style={{ height: '240px', overflow: 'hidden', borderRadius: '24px', position: 'relative' }}>
-                      <img src={s.img} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                      <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem', background: '#fff', padding: '0.8rem 1.2rem', borderRadius: '16px', fontSize: '1.5rem', boxShadow: 'var(--shadow-sm)' }}>{s.icon}</div>
-                  </div>
-                  <div style={{ padding: '2.5rem 1.5rem' }}>
-                      <h3 style={{ fontSize: '1.75rem', marginBottom: '1.2rem', fontWeight: 900 }}>{s.title}</h3>
-                      <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.6' }}>{s.desc}</p>
-                      <a href={s.link} style={{ fontWeight: 800, color: 'var(--secondary)', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                        LEARN MORE <span style={{ fontSize: '1.2rem' }}>→</span>
-                      </a>
-                  </div>
+            <div className="expertise-grid">
+              
+              {/* Card 1: Video Editing (Large) */}
+              <div className="bento-card expertise-card-large" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1rem' }}>
+                  <span style={{ fontSize: '1.5rem' }}>🎬</span>
                 </div>
-              ))}
+                <h3 style={{ fontSize: '2rem', fontWeight: 900, marginBottom: '1rem', color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
+                  Video Editing
+                </h3>
+                <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: '1.6', maxWidth: '80%' }}>
+                  High-end cinematic storytelling, color grading, and motion graphics that capture your audience.
+                </p>
+                <div style={{ position: 'absolute', right: '2rem', bottom: '2rem', opacity: 0.1, fontSize: '8rem' }}>
+                  〰
+                </div>
+              </div>
+
+              {/* Card 2: Web Development (Tall) */}
+              <div className="bento-card expertise-card-tall" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1rem' }}>
+                    <span style={{ fontSize: '1.5rem' }}>💻</span>
+                  </div>
+                  <h3 style={{ fontSize: '1.8rem', fontWeight: 900, marginBottom: '1rem', color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
+                    Web Development
+                  </h3>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: '1.6' }}>
+                    Bespoke, high-performance websites built with the latest technologies and a focus on conversion.
+                  </p>
+                </div>
+                <div style={{ marginTop: '2rem' }}>
+                  <div className="portfolio-tech-badge" style={{ marginBottom: '0.5rem' }}>React & Vite</div>
+                  <div className="portfolio-tech-badge">Supabase & Tailwind</div>
+                </div>
+              </div>
+
+              {/* Card 3: Graphic Design (Small) */}
+              <div className="bento-card expertise-card-small" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1rem' }}>
+                  <span style={{ fontSize: '1.5rem' }}>🎨</span>
+                </div>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '0.8rem', color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
+                  Graphic Design
+                </h3>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  Visual identities and branding that make your business unforgettable in a crowded market.
+                </p>
+              </div>
+
+              {/* Card 4: Operational Radar (Small) */}
+              <div className="bento-card expertise-card-small" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1rem' }}>
+                  <div className="radar-dot"><div className="radar-ripple"></div></div>
+                  <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#10b981', letterSpacing: '1px', textTransform: 'uppercase' }}>Available</span>
+                </div>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, marginBottom: '0.8rem', color: 'var(--text-main)', letterSpacing: '-0.02em' }}>
+                  Operational Radar
+                </h3>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: '1.6' }}>
+                  Based in Jakarta Selatan. Ready to deploy custom solutions within 24 hours.
+                </p>
+              </div>
+
             </div>
           </div>
         </section>
 
-        <section id="portfolio" style={{ padding: '120px 0' }}>
+        <section id="portfolio" style={{ padding: '120px 0', background: '#050505' }}>
           <div className="container">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '5rem' }}>
-              <div>
-                <div style={{ color: 'var(--secondary)', fontWeight: 800, fontSize: '0.9rem', letterSpacing: '2px', marginBottom: '1rem' }}>PORTFOLIO</div>
-                <h2 style={{ fontSize: '3rem', fontWeight: 900, marginBottom: '0.5rem', letterSpacing: '-0.02em' }}>Featured Projects</h2>
-                <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>A glimpse into our recent creative ventures.</p>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '4rem' }}>
+              <div style={{ color: 'var(--text-muted)', fontWeight: 800, fontSize: '0.8rem', letterSpacing: '2px', marginBottom: '1rem', border: '1px solid rgba(255,255,255,0.1)', padding: '0.4rem 1rem', borderRadius: '100px' }}>WORK SHOWCASE</div>
+              <h2 style={{ fontSize: '3.5rem', fontWeight: 900, marginBottom: '0.5rem', letterSpacing: '-0.02em', lineHeight: 1.1 }}>Crafting <span style={{color: '#a78bfa'}}>Motion</span> & Visual<br/>Identity.</h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', marginTop: '1rem', maxWidth: '500px' }}>A selection of high-fidelity projects where cinematic precision meets strategic design. Every frame is engineered for impact.</p>
+              
+              <div style={{ display: 'flex', gap: '1.5rem', marginTop: '2.5rem', fontSize: '0.85rem', fontWeight: 700 }}>
+                <span style={{ borderBottom: '2px solid #fff', paddingBottom: '0.3rem' }}>All Projects</span>
+                <span style={{ color: 'var(--text-muted)' }}>Video</span>
+                <span style={{ color: 'var(--text-muted)' }}>Design</span>
               </div>
-              <a href="#" style={{ color: 'var(--secondary)', fontWeight: 800, borderBottom: '2px solid var(--secondary-glow)', paddingBottom: '4px' }}>View All Projects →</a>
             </div>
             
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '2.5rem' }}>
+            <div className="portfolio-masonry">
               {[
                 {
                   title: 'HAKA Auto Helpdesk (ADAS)',
                   subtitle: 'Unified Ticketing & Operations Portal',
-                  desc: 'Streamlined corporate operations portal for HAKA Auto Group featuring automated ticket routing, real-time tracking, and integrated GA meeting room bookings.',
-                  tech: 'React • TypeScript • Tailwind CSS • Supabase • TanStack Query',
-                  github: 'https://github.com/ict-bumiauto/adas-helpdesk-hakaauto',
+                  class: 'portfolio-card-wide',
                   img: projectHelpdesk
                 },
                 {
                   title: 'BYD Haka Careers Hub',
                   subtitle: 'Enterprise Recruitment Platform',
-                  desc: 'A comprehensive candidate recruitment portal for HR to post listings, track applicants, score profiles, and schedule interviews with elegant dashboard insights.',
-                  tech: 'React • TypeScript • Supabase • Tailwind CSS • TanStack Query • Recharts',
-                  github: 'https://github.com/ict-bumiauto/hakaauto-rekrutmen',
+                  class: 'portfolio-card-square',
                   img: projectRecruitment
                 },
                 {
                   title: 'Bosles Bimbel Portal',
                   subtitle: 'E-Learning & Tutoring Matchmaker',
-                  desc: 'An interactive study and tutoring platform enabling seamless tutor-student scheduling, virtual classes, progress analytics, and curriculum resources.',
-                  tech: 'React • Vite • Tailwind CSS • Supabase Auth & Storage',
-                  github: 'https://github.com/VicoPratama/bosles-bimbel',
+                  class: 'portfolio-card-square',
                   img: projectBimbel
                 },
                 {
                   title: 'Vico Pratama Portfolio',
                   subtitle: 'Personal Engineering Showcase',
-                  desc: 'A bespoke personal portfolio website displaying complex engineering projects with glowing interactive UI components, dark mode, and seamless layouts.',
-                  tech: 'React • Vite • Tailwind CSS • Vercel Hosting',
-                  github: 'https://github.com/VicoPratama/portfolio-vicopf',
+                  class: 'portfolio-card-wide',
                   img: projectPortfolio
                 },
                 {
                   title: 'Tebet to BSD Commuter',
                   subtitle: 'Transit Route Planner Utility',
-                  desc: 'An intelligent transit helper mapping routes, estimating travel fares, and tracking real-time KRL and shuttle schedules for Tebet-BSD commuters.',
-                  tech: 'React • Tailwind CSS • Vite • Local Transit API',
-                  github: 'https://github.com/VicoPratama/tebet-to-bsd',
+                  class: 'portfolio-card-square',
                   img: projectTransit
                 }
               ].map((p, idx) => (
-                <div key={idx} className="portfolio-card">
-                  <div className="portfolio-img-container">
-                    <img src={p.img} alt={p.title} />
+                <div key={idx} className={p.class} style={{ position: 'relative', height: p.class === 'portfolio-card-wide' ? '400px' : '450px', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
+                  <div className="portfolio-img-container-masonry">
+                    <img src={p.img} alt={p.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
-                  <div style={{ padding: '2rem 1.2rem 1rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
-                    <div style={{ color: 'var(--secondary)', fontWeight: 800, fontSize: '0.72rem', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '0.6rem', opacity: 0.8 }}>{p.subtitle}</div>
-                    <h3 style={{ fontSize: '1.4rem', marginBottom: '0.8rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: '1.3' }}>{p.title}</h3>
-                    <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.9rem', lineHeight: '1.6', flex: 1 }}>{p.desc}</p>
-                    <div className="portfolio-tech-badge">
-                      {p.tech}
+                  <div className="portfolio-content-overlay">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                      <span style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '1px', textTransform: 'uppercase' }}>{p.subtitle}</span>
                     </div>
-                    <a href={p.github} target="_blank" rel="noopener noreferrer" style={{ fontWeight: 800, color: 'var(--secondary)', fontSize: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', letterSpacing: '0.5px', marginTop: 'auto' }}>
-                      VIEW CODE ON GITHUB <span style={{ fontSize: '1.1rem' }}>→</span>
-                    </a>
+                    <h3 style={{ fontSize: '1.5rem', fontWeight: 900, margin: 0 }}>{p.title}</h3>
                   </div>
                 </div>
               ))}
@@ -326,7 +275,7 @@ function App() {
           </div>
         </section>
 
-        <section id="pricing" style={{ padding: '120px 0', background: '#fafafa' }}>
+        <section id="pricing" style={{ padding: '120px 0', background: 'var(--primary)' }}>
           <div className="container">
             <div style={{ textAlign: 'center', marginBottom: '5rem', maxWidth: '800px', margin: '0 auto 5rem' }}>
               <div style={{ color: 'var(--secondary)', fontWeight: 800, fontSize: '0.9rem', letterSpacing: '2px', marginBottom: '1rem' }}>INVESTMENT</div>
@@ -421,7 +370,7 @@ function App() {
           </div>
         </section>
 
-        <section id="faq" style={{ padding: '120px 0', background: '#fafafa', borderTop: '1px solid rgba(0,0,0,0.02)', borderBottom: '1px solid rgba(0,0,0,0.02)' }}>
+        <section id="faq" style={{ padding: '120px 0', background: '#111111', borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
           <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
               <div style={{ color: 'var(--secondary)', fontWeight: 800, fontSize: '0.9rem', letterSpacing: '2px', marginBottom: '1rem' }}>F.A.Q</div>
@@ -452,25 +401,83 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" style={{ padding: '120px 0' }}>
+        <section id="contact" style={{ padding: '120px 0', background: '#0a0a0a' }}>
           <div className="container">
-            <div className="float-slow" style={{ background: 'var(--secondary)', color: 'var(--primary)', textAlign: 'center', padding: '100px 4rem', borderRadius: '48px', boxShadow: '0 40px 100px rgba(3, 5, 198, 0.3)', position: 'relative', overflow: 'hidden' }}>
-              <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '300px', height: '300px', background: 'rgba(255,255,255,0.05)', borderRadius: '50%' }}></div>
-              <div style={{ position: 'absolute', bottom: '-80px', left: '-80px', width: '200px', height: '200px', background: 'rgba(255,255,255,0.05)', borderRadius: '50%' }}></div>
-              
-              <div style={{ position: 'relative', zIndex: 2 }}>
-                <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, marginBottom: '2rem', letterSpacing: '-0.03em', lineHeight: 1 }}>Ready to Start a Project?</h2>
-                <p style={{ fontSize: '1.25rem', marginBottom: '3.5rem', opacity: 0.9, maxWidth: '600px', margin: '0 auto 3.5rem' }}>Let's collaborate and create something extraordinary together that sets your brand apart.</p>
-                <button className="btn-primary" style={{ background: '#fff', color: 'var(--secondary)', padding: '1.2rem 3.5rem', fontSize: '1.1rem', boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }}>
-                  Work With Us <span style={{ fontSize: '1.4rem' }}>→</span>
-                </button>
+            <div style={{ marginBottom: '4rem' }}>
+              <div style={{ color: '#10b981', fontWeight: 800, fontSize: '0.8rem', letterSpacing: '2px', marginBottom: '1rem', textTransform: 'uppercase' }}>LET'S COLLABORATE</div>
+              <h2 style={{ fontSize: '3.5rem', fontWeight: 900, marginBottom: '0.5rem', letterSpacing: '-0.02em', lineHeight: 1.1 }}>BRING YOUR VISION<br/><span style={{color: '#a78bfa'}}>TO LIFE.</span></h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', marginTop: '1rem', maxWidth: '600px' }}>Whether it's high-stakes commercial editing or cinematic brand narratives, we're here to elevate your output. Reach out and start the conversation.</p>
+            </div>
+            
+            <div className="contact-split">
+              {/* Left Side: Form */}
+              <div style={{ background: '#111111', padding: '3rem', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                <h3 style={{ fontSize: '1.8rem', fontWeight: 900, marginBottom: '2rem' }}>Send an Inquiry</h3>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+                  <div>
+                    <label className="contact-label">FULL NAME</label>
+                    <input type="text" className="contact-input" placeholder="John Doe" />
+                  </div>
+                  <div>
+                    <label className="contact-label">EMAIL ADDRESS</label>
+                    <input type="email" className="contact-input" placeholder="hello@company.com" />
+                  </div>
+                </div>
+                <div style={{ marginTop: '1.5rem' }}>
+                  <label className="contact-label">SUBJECT</label>
+                  <select className="contact-input" style={{ appearance: 'none', color: '#666' }}>
+                    <option>Video Editing Project</option>
+                    <option>Web Development</option>
+                    <option>Graphic Design</option>
+                  </select>
+                </div>
+                <div style={{ marginTop: '1.5rem' }}>
+                  <label className="contact-label">MESSAGE</label>
+                  <textarea className="contact-input" rows="4" placeholder="Tell us about your creative goals..."></textarea>
+                </div>
+                <button className="contact-btn" style={{ width: '100%', marginTop: '1rem' }}>SUBMIT INQUIRY</button>
+              </div>
+
+              {/* Right Side: Details */}
+              <div>
+                <div className="studio-details-block">
+                  <h3 style={{ fontSize: '1.4rem', fontWeight: 900, marginBottom: '1.5rem', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1rem' }}>Studio Details</h3>
+                  
+                  <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
+                    <span style={{ fontSize: '1.2rem' }}>📍</span>
+                    <div>
+                      <div style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--text-muted)', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '0.2rem' }}>HEADQUARTERS</div>
+                      <div style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>Malang, East Java<br/>Indonesia</div>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
+                    <span style={{ fontSize: '1.2rem' }}>✉️</span>
+                    <div>
+                      <div style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--text-muted)', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '0.2rem' }}>EMAIL</div>
+                      <div style={{ fontSize: '0.95rem' }}>vnvcreator@gmail.com</div>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'flex', gap: '1rem' }}>
+                    <span style={{ fontSize: '1.2rem' }}>🕒</span>
+                    <div>
+                      <div style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--text-muted)', letterSpacing: '1px', textTransform: 'uppercase', marginBottom: '0.2rem' }}>HOURS</div>
+                      <div style={{ fontSize: '0.95rem' }}>Mon — Fri, 9am — 6pm WIB</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="studio-details-block" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '200px', background: 'linear-gradient(45deg, #1a1a1a, #0a0a0a)' }}>
+                    <div style={{ color: 'var(--text-muted)', fontSize: '0.8rem', letterSpacing: '2px', fontWeight: 800 }}>ACTIVE STUDIO LOCATION</div>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer style={{ padding: '6rem 0 3rem', background: 'var(--secondary)', color: 'rgba(255, 255, 255, 0.8)' }}>
+      <footer style={{ padding: '6rem 0 3rem', background: '#050505', color: 'rgba(255, 255, 255, 0.8)', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', marginBottom: '4rem' }}>
             
